@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const NavbarComponent = () => {
   return (
     <>
-      <div>
+      <div className="Navbar-container">
         <div className="logo">
           <img src="" alt="logo" />
         </div>
