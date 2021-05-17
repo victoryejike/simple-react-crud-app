@@ -5,6 +5,7 @@
   padding: 10px;
   border-radius: 5px;
   box-shadow: -3px 6px 4px rgba(219, 215, 215, 0.212);
+  margin-bottom: 20px;
 
   .card-header, .card-footer{
     display: flex;
@@ -13,6 +14,13 @@
     margin-bottom: 7px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.2);
     padding-bottom: 5px;
+  }
+
+  .card-avatar-container, img{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px; 
+    margin-right: 8px;
   }
 
   .card-description{
@@ -25,8 +33,16 @@
     padding-top: 5px;
   }
 
+  .card-rating{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+
   .card-btn > button{
     width: 100%;
     padding: 4px 0px;
+    cursor: pointer;
   }
 }

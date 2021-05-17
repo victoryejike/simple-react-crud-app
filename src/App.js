@@ -1,6 +1,7 @@
 import "./styles.scss";
+
 import NavbarComponent from "./Components/NavbarComponent/NavbarComponent";
-import CardComponent from "./Components/CardComponent/CardComponent";
+import AllBootcamps from "./Pages/AllBootcamps/AllBootcamps";
 import HeaderComponent from "./Components/HeaderComponent/HeaderComponent";
 
 import { Route, Switch } from "react-router-dom";
@@ -11,7 +12,7 @@ export default function App() {
       <NavbarComponent />
       <Switch>
         <Route exact path="/" component={HeaderComponent} />
-        <Route exact path="/allbootcamps" component={CardComponent} />
+        <Route exact path="/allbootcamps" component={AllBootcamps} />
       </Switch>
     </div>
   );

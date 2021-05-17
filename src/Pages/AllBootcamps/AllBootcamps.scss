@@ -1,0 +1,15 @@
+.page-container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.page-title{
+  margin: 10px 0px;
+}
+
+.bootcamp-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
