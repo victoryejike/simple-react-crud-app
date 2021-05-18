@@ -12,7 +12,7 @@ export default function App() {
       <NavbarComponent />
       <Switch>
         <Route exact path="/" component={HeaderComponent} />
-        <Route exact path="/allbootcamps" component={AllBootcamps} />
+        <Route path="/allbootcamps" component={AllBootcamps} />
       </Switch>
     </div>
   );
