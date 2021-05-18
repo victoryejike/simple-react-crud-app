@@ -1,7 +1,11 @@
 import React from "react";
 import "./CardComponent.scss";
 
+import { Link, useRouteMatch } from "react-router-dom";
+
 const CardComponent = ({ data }) => {
+  let { url } = useRouteMatch();
+
   return (
     <>
       {data.map((data, i) => (
@@ -35,7 +39,9 @@ const CardComponent = ({ data }) => {
             </div>
           </div>
           <div className="card-btn">
-            <button>View Bootcamp</button>
+            <button>
+              <Link to={`${url}/${data.bootcamp_id}`}>View Bootcamp</Link>
+            </button>
           </div>
         </div>
       ))}
