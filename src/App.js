@@ -17,7 +17,7 @@ export default function App() {
         <Route exact path="/allbootcamps" component={AllBootcamps} />
         <Route
           exact
-          path="/allbootcamps/:id"
+          path="/singlebootcamps/:id"
           render={(props) => <SingleBootcamp {...props} data={bootcampData} />}
         />
       </Switch>

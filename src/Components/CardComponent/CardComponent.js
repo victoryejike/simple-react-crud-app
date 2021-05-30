@@ -40,7 +40,9 @@ const CardComponent = ({ data }) => {
           </div>
           <div className="card-btn">
             <button>
-              <Link to={`${url}/${data.bootcamp_id}`}>View Bootcamp</Link>
+              <Link to={`singlebootcamps/${data.bootcamp_id}`}>
+                View Bootcamp
+              </Link>
             </button>
           </div>
         </div>
